@@ -1,0 +1,126 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+body{
+    background: #eee;
+}
+
+html{
+    font-size: 55%;
+}
+
+/* ------------------------------- header section starts ---------------------------  */
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-bottom: .1rem solid rgba(0,0,0,0.3);
+    padding: 1.5rem 9%;
+}
+
+header .icons div{
+    height: 4rem;
+    width: 4rem;
+    font-size: 1.7rem;
+    line-height: 4rem;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: .7rem;
+}
+
+header .icons div:hover{
+    background: #00ffff;
+    color: #000;
+    transform: rotate(360deg);
+}
+
+
+.side-navbar{
+    position: fixed;
+    top: 0;
+    right: -120%;
+    height: 100%;
+    background: #333;
+    padding: 3rem;
+    width: 30rem;
+}
+
+.side-navbar.active{
+    right: 0;
+    box-shadow: 0 0 0 100vw rgba(0,0,0,0.3);
+}
+
+.side-navbar .user{
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.side-navbar .user img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    border: .5rem solid #fff;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    object-fit: cover;
+    box-shadow: 5rem 2rem 0 -3rem aqua,
+                -5rem -2rem 0 -3rem aqua;
+}
+
+.side-navbar .user h3{
+    padding-top: .5rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.side-navbar .links a{
+    display: block;
+    border-bottom: .1rem solid #fff;
+    font-size: 2rem;
+    padding: 1.5rem 0;
+    color: #fff;
+}
+
+.side-navbar .links a i{
+    margin-right: 1rem;
+    color: #00ffff;
+}
+
+.side-navbar .links a:last-child{
+    border: none;
+}
+
+.side-navbar .links a:hover{
+    letter-spacing: .2rem;
+    color: #00ffff;
+}
+
+
+.side-navbar #close{
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.side-navbar #close:hover{
+    transform: rotate(-360deg);
+    color: #00ffff;
+}
